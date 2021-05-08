@@ -8,13 +8,15 @@ class Request extends \Workerman\Protocols\Http\Request
 
     public static function getInstance(): Request
     {
-        if(! is_object(self::$_instance))  //or if( is_null(self::$_instance) ) or if( self::$_instance == null )
-            self::$_instance = new Request();
-
         return self::$_instance;
     }
 
-    public function input($name, $default = null)
+    public static function setInstance(Request $request)
+    {
+        self::$_instance = $request;
+    }
+
+    public function input(string $name, $default = null): mixed
     {
         $post = $this->post();
         if (isset($post[$name])) {
@@ -22,5 +24,10 @@ class Request extends \Workerman\Protocols\Http\Request
         }
         $get = $this->get();
         return $get[$name] ?? $default;
+    }
+
+    public function url(): string
+    {
+        return '//' . $this->host() . $this->path();
     }
 }
