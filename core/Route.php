@@ -130,11 +130,13 @@ class Route
 
         $controller = $this->routes[$route]['controller'];
         $controller = $this->namespace . $namespace . $controller;
-        $controllerCheck = new $controller();
+        if (class_exists($controller)){
+            $controllerCheck = new $controller();
 
-        if (is_callable([$controllerCheck , $this->routes[$route]['action']]))
-            return $controller;
-
+            if (is_callable([$controllerCheck , $this->routes[$route]['action']]))
+                return $controller;
+        }
+        
         return false;
 
     }
