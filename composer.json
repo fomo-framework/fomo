@@ -3,7 +3,8 @@
         "php" : ">=8.0",
         "workerman/workerman": "^4.0",
         "illuminate/database": "^8.40",
-        "illuminate/pagination": "^8.40"
+        "illuminate/pagination": "^8.40",
+        "symfony/polyfill-ctype": "^1.8"
     } ,
     "autoload": {
         "psr-4": {
