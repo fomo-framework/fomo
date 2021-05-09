@@ -35,12 +35,12 @@ function configPath(): string
     return BASE_PATH . DIRECTORY_SEPARATOR . 'config';
 }
 
-function json(array $data , int $status = 200 , $options = JSON_UNESCAPED_UNICODE): Response
+function json(array $data , int $status = 200): Response
 {
     return new Response(
         $status ,
         ['Content-Type' => 'application/json']
-        , json_encode($data, $options)
+        , json_encode($data, JSON_UNESCAPED_UNICODE | JSON_INVALID_UTF8_IGNORE)
     );
 }
 
