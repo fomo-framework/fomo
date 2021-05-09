@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Resource;
 
 use Core\JsonResponse;
 

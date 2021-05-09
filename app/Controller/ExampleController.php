@@ -6,5 +6,5 @@ use Core\Controller;
 
 class ExampleController extends Controller
 {
-
+    //
 }
