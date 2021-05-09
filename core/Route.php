@@ -136,7 +136,7 @@ class Route
             if (is_callable([$controllerCheck , $this->routes[$route]['action']]))
                 return $controller;
         }
-        
+
         return false;
 
     }
