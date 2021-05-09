@@ -1,9 +1,7 @@
 <?php
 
 use Core\Application;
-use Core\Request;
 use Workerman\Connection\TcpConnection;
-use Workerman\Protocols\Http;
 use Workerman\Worker;
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -32,8 +30,6 @@ foreach ($property_map as $property) {
 $boot = new Application();
 
 $http_worker->onWorkerStart = [$boot , 'onWorkerStart'];
-
-Http::requestClass(Request::class);
 
 $http_worker->onMessage = [$boot , 'onMessage'];
 

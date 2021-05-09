@@ -1,5 +1,6 @@
 <?php
 
+use Core\Request;
 use Workerman\Protocols\Http\Response;
 
 define('BASE_PATH', realpath(__DIR__.'/../'));
@@ -41,4 +42,9 @@ function json(array $data , int $status = 200 , $options = JSON_UNESCAPED_UNICOD
         ['Content-Type' => 'application/json']
         , json_encode($data, $options)
     );
+}
+
+function request(string $input)
+{
+    return Request::getInstance()->input($input);
 }
