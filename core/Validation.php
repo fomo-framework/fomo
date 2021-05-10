@@ -1,10 +1,13 @@
 <?php
 
-
 namespace Core;
+
+use Core\Validation\Rules;
 
 class Validation
 {
+    use Rules;
+
     protected array $rules = [];
     protected array $errorDefaultMessage = [];
     protected array $messages = [];
@@ -29,7 +32,7 @@ class Validation
                 $item = $itemExplode[0];
                 $itemValue = $itemExplode[1] ?? null;
 
-                $message = $this->errorDefaultMessage['message'][$item] ? str_replace(":attribute" , $this->errorDefaultMessage['attribute'][$ruleName] , $this->errorDefaultMessage['message'][$item]) : '';
+                $message = $this->errorDefaultMessage['message'][$item] ? str_replace(":attribute" , $this->errorDefaultMessage['attribute'][$ruleName] ?? $ruleName , $this->errorDefaultMessage['message'][$item]) : null;
 
                 $message = str_replace(":value" , $itemValue , $message);
 
@@ -42,34 +45,6 @@ class Validation
             }
         }
     }
-
-    protected function required(array $parameters)
-    {
-        if (! $this->request->input($parameters['ruleName']) || empty($this->request->input($parameters['ruleName']))){
-            array_push($this->messages , $parameters['message']);
-        }
-    }
-
-    protected function max(array $parameters)
-    {
-        if ($this->strlen($this->request->input($parameters['ruleName']) ) > $parameters['value']) {
-            array_push($this->messages , $parameters['message']);
-        }
-    }
-
-    protected function strlen($value): bool|int
-    {
-        if (!\function_exists('mb_detect_encoding')) {
-            return \strlen($value);
-        }
-
-        if (false === $encoding = \mb_detect_encoding($value)) {
-            return \strlen($value);
-        }
-
-        return \mb_strlen($value, $encoding);
-    }
-
 
     public function getMessages(): array
     {
