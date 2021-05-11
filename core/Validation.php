@@ -21,7 +21,7 @@ class Validation
         $this->validate();
     }
 
-    protected function validate()
+    protected function validate(): void
     {
         foreach ($this->rules as $ruleName => $rule){
             $rule = explode('|' , $rule);

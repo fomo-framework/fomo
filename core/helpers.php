@@ -1,6 +1,7 @@
 <?php
 
 use Core\Request;
+use Core\Authentication\Auth;
 use Workerman\Protocols\Http\Response;
 
 define('BASE_PATH', realpath(__DIR__.'/../'));
@@ -47,4 +48,16 @@ function json(array $data , int $status = 200): Response
 function request(string $input)
 {
     return Request::getInstance()->input($input);
+}
+
+function bearerToken(): string
+{
+    $header = Request::getInstance()->header('Authorization', '');
+
+    return mb_substr($header , 7 , null , 'UTF-8');
+}
+
+function auth(): Auth
+{
+    return Auth::getInstance();
 }

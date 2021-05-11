@@ -6,67 +6,67 @@ use DateTime;
 
 trait Rules
 {
-    protected function required(array $parameters)
+    protected function required(array $parameters): void
     {
         if (! $this->request->input($parameters['ruleName']) || empty($this->request->input($parameters['ruleName'])) || is_null($this->request->input($parameters['ruleName'])))
             array_push($this->messages , $parameters['message']);
     }
 
-    protected function string(array $parameters)
+    protected function string(array $parameters): void
     {
         if (!\is_string($this->request->input($parameters['ruleName'])))
             array_push($this->messages , $parameters['message']);
     }
 
-    protected function integer(array $parameters)
+    protected function integer(array $parameters): void
     {
         if (!\is_int($this->request->input($parameters['ruleName'])))
             array_push($this->messages , $parameters['message']);
     }
 
-    protected function boolean(array $parameters)
+    protected function boolean(array $parameters): void
     {
         if (!\is_bool($this->request->input($parameters['ruleName'])))
             array_push($this->messages , $parameters['message']);
     }
 
-    protected function array(array $parameters)
+    protected function array(array $parameters): void
     {
         if (!\is_array($this->request->input($parameters['ruleName'])))
             array_push($this->messages , $parameters['message']);
     }
 
-    protected function email(array $parameters)
+    protected function email(array $parameters): void
     {
         if (false === \filter_var($this->request->input($parameters['ruleName']), FILTER_VALIDATE_EMAIL))
             array_push($this->messages , $parameters['message']);
     }
 
-    protected function regex(array $parameters)
+    protected function regex(array $parameters): void
     {
         if (!\preg_match($parameters['value'], $this->request->input($parameters['ruleName'])))
             array_push($this->messages , $parameters['message']);
     }
 
-    protected function max(array $parameters)
+    protected function max(array $parameters): void
     {
         if ($this->strlen($this->request->input($parameters['ruleName'])) > $parameters['value'])
             array_push($this->messages , $parameters['message']);
     }
 
-    protected function min(array $parameters)
+    protected function min(array $parameters): void
     {
         if ($this->strlen($this->request->input($parameters['ruleName'])) < $parameters['value'])
             array_push($this->messages , $parameters['message']);
     }
 
-    protected function size(array $parameters)
+    protected function size(array $parameters): void
     {
         if ($this->strlen($this->request->input($parameters['ruleName'])) != $parameters['value'])
             array_push($this->messages , $parameters['message']);
     }
 
-    protected function date(array $parameters)
+    protected function date(array $parameters): void
     {
         $dateArray  = explode('-', $this->request->input($parameters['ruleName']));
         if (count($dateArray) == 3){
@@ -79,7 +79,7 @@ trait Rules
         array_push($this->messages , $parameters['message']);
     }
 
-    protected function in(array $parameters)
+    protected function in(array $parameters): void
     {
         $array = explode(',' , $parameters['value']);
 
@@ -87,7 +87,7 @@ trait Rules
             array_push($this->messages , $parameters['message']);
     }
 
-    protected function nationalCode(array $parameters)
+    protected function nationalCode(array $parameters): void
     {
         if(! preg_match('/^[0-9]{10}$/' , $this->request->input($parameters['ruleName']))){
             array_push($this->messages , $parameters['message']);

@@ -12,7 +12,7 @@ class Application
 {
     protected Route $router;
 
-    protected function database()
+    protected function database(): void
     {
         $config = include "config/database.php";
 
@@ -33,7 +33,7 @@ class Application
         });
     }
 
-    public function onWorkerStart()
+    public function onWorkerStart(): void
     {
         $this->router = include "route/api.php";
 
@@ -42,7 +42,7 @@ class Application
         $this->database();
     }
 
-    public function onMessage(TcpConnection $connection , Request $request)
+    public function onMessage(TcpConnection $connection , Request $request): void
     {
         Request::setInstance($request);
         $connection->send($this->router->dispatch($request->uri() , $request->method()));

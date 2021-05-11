@@ -16,27 +16,27 @@ class Route
 
     protected string $namespace = 'App\Controller\\';
 
-    public function post(string $route , string|array $callback)
+    public function post(string $route , string|array $callback): void
     {
         $this->addRoute('POST' , $route , $callback);
     }
 
-    public function get(string $route , string|array $callback)
+    public function get(string $route , string|array $callback): void
     {
         $this->addRoute('GET' , $route , $callback);
     }
 
-    public function patch(string $route , string|array $callback)
+    public function patch(string $route , string|array $callback): void
     {
         $this->addRoute('PATCH' , $route , $callback);
     }
 
-    public function put(string $route , string|array $callback)
+    public function put(string $route , string|array $callback): void
     {
         $this->addRoute('PUT' , $route , $callback);
     }
 
-    public function delete(string $route , string|array $callback)
+    public function delete(string $route , string|array $callback): void
     {
         $this->addRoute('DELETE' , $route , $callback);
     }
@@ -145,8 +145,7 @@ class Route
     {
         $middlewares = $this->routes[$route]['middleware'];
         foreach ($middlewares as $middleware){
-            $middlewareCheck = new $middleware();
-            if (! is_callable([$middlewareCheck , 'handle'])){
+            if (! method_exists($middleware , 'handle')){
                 return json([
                     'message' => "middleware $middleware or method handle not exist"
                 ] , 404);

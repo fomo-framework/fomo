@@ -4,14 +4,14 @@ namespace Core;
 
 class Request extends \Workerman\Protocols\Http\Request
 {
-    private static ?Request $_instance = null;
+    protected static ?Request $_instance = null;
 
     public static function getInstance(): Request
     {
         return self::$_instance;
     }
 
-    public static function setInstance(Request $request)
+    public static function setInstance(Request $request): void
     {
         self::$_instance = $request;
     }
