@@ -4,7 +4,8 @@
         "workerman/workerman": "^4.0",
         "illuminate/database": "^8.40",
         "illuminate/pagination": "^8.40",
-        "symfony/polyfill-ctype": "^1.8"
+        "symfony/polyfill-ctype": "^1.8",
+        "predis/predis": "^1.1"
     } ,
     "autoload": {
         "psr-4": {
