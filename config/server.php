@@ -2,6 +2,7 @@
 
 return [
     'listen'               => 'http://127.0.0.1:9000',
+    'timezone'               => 'Asia/Tehran',
     'transport'            => 'tcp',
     'context'              => [],
     'name'                 => 'tower',

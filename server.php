@@ -27,6 +27,9 @@ foreach ($property_map as $property) {
     }
 }
 
+date_default_timezone_set($config['timezone']);
+
+
 $boot = new Application();
 
 $http_worker->onWorkerStart = [$boot , 'onWorkerStart'];
