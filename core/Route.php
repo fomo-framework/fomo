@@ -130,15 +130,11 @@ class Route
 
         $controller = $this->routes[$route]['controller'];
         $controller = $this->namespace . $namespace . $controller;
-        if (class_exists($controller)){
-            $controllerCheck = new $controller();
 
-            if (is_callable([$controllerCheck , $this->routes[$route]['action']]))
-                return $controller;
-        }
+        if (method_exists($controller , $this->routes[$route]['action']))
+            return $controller;
 
         return false;
-
     }
 
     protected function checkExistAndAccessMiddleware(string $route): bool|Response
