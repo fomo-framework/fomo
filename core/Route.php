@@ -172,7 +172,7 @@ class Route
 
         if ($route === false)
             return json([
-                'message' => 'error.'
+                'message' => 'error'
             ] , 400);
 
 
