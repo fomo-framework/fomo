@@ -50,4 +50,17 @@ class Validation
     {
         return $this->messages;
     }
+
+    public function hasMessage(): bool
+    {
+        if (empty($this->messages))
+            return false;
+
+        return true;
+    }
+
+    public function firstMessage(): string
+    {
+        return $this->messages[0];
+    }
 }
