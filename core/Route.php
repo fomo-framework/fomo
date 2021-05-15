@@ -45,11 +45,11 @@ class Route
     {
         $previousGroupNamespace = $this->currentGroupNamespace;
         if (isset($parameters['namespace']))
-            $this->currentGroupNamespace = $previousGroupNamespace . $parameters['namespace'];
+            $this->currentGroupNamespace = $previousGroupNamespace . $parameters['namespace'] . '\\';
 
         $previousGroupPrefix = $this->currentGroupPrefix;
         if (isset($parameters['prefix']))
-            $this->currentGroupPrefix = $previousGroupPrefix . $parameters['prefix'];
+            $this->currentGroupPrefix = $previousGroupPrefix . $parameters['prefix'] . '/';
 
         if (isset($parameters['middleware']))
             array_push($this->currentGroupMiddleware , $parameters['middleware']);
@@ -73,7 +73,7 @@ class Route
         $route = '/^\/' . $route . '\/?$/i';
 
         if ($this->currentGroupNamespace != '')
-            $routeParameters['namespace'] = $this->currentGroupNamespace . '\\';
+            $routeParameters['namespace'] = $this->currentGroupNamespace;
 
 
         $routeParameters['method'] = $method;
