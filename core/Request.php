@@ -2,7 +2,9 @@
 
 namespace Core;
 
-class Request extends \Workerman\Protocols\Http\Request
+use \Workerman\Protocols\Http\Request as WorkerRequest;
+
+class Request extends WorkerRequest
 {
     protected static ?Request $_instance = null;
 

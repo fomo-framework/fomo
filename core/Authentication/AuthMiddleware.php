@@ -3,7 +3,7 @@
 namespace Core\Authentication;
 
 use Core\DB;
-use Workerman\Protocols\Http\Response;
+use Core\Response;
 
 class AuthMiddleware
 {

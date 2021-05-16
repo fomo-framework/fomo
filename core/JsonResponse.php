@@ -2,7 +2,7 @@
 
 namespace Core;
 
-use Workerman\Protocols\Http\Response;
+use Core\Response;
 
 class JsonResponse
 {

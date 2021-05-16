@@ -2,7 +2,9 @@
 
 namespace Core;
 
-class Response
+use Workerman\Protocols\Http\Response as WorkerResponse;
+
+class Response extends WorkerResponse
 {
     public const HTTP_CONTINUE = 100;
     public const HTTP_SWITCHING_PROTOCOLS = 101;

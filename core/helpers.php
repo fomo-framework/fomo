@@ -2,7 +2,7 @@
 
 use Core\Request;
 use Core\Authentication\Auth;
-use Workerman\Protocols\Http\Response;
+use Core\Response;
 
 define('BASE_PATH', realpath(__DIR__.'/../'));
 
