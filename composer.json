@@ -1,4 +1,14 @@
 {
+    "name": "tower/tower",
+    "description": "the fast php framework",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Amir",
+            "email": "faramarzii.amir@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
     "require": {
         "php" : ">=8.0",
         "workerman/workerman": "^4.0",
