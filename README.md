@@ -1,5 +1,8 @@
 # Tower
 
+## Installation
+```composer create-project tower/tower  ```  
+
 ## Requires
 PHP 8.0 or Higher  
 A POSIX compatible operating system (Linux, OSX, BSD)  
