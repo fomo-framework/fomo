@@ -11,6 +11,6 @@ return [
     'group'                => '',
     'pid_file'             => storagePath() . '/tower.pid',
     'max_request'          => 1000000,
-    'stdout_file'          => storagePath() . '/logs/stdout.log',
+    'stdout_file'          => storagePath() . '/logs/tower.log',
     'max_package_size'     => 10*1024*1024
 ];
