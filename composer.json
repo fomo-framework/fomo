@@ -1,6 +1,7 @@
 {
     "name": "tower/tower",
-    "description": "the fast php framework",
+    "description": "The Tower Framework",
+     "keywords": ["framework", "tower" , "high performance"],
     "type": "project",
     "authors": [
         {
@@ -8,7 +9,6 @@
             "email": "faramarzii.amir@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
         "php" : ">=8.0",
         "workerman/workerman": "^4.0",
@@ -25,5 +25,7 @@
         "files": [
             "core/helpers.php"
         ]
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
