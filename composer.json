@@ -3,6 +3,7 @@
     "description": "The Tower Framework",
      "keywords": ["framework", "tower" , "high performance"],
     "type": "project",
+    "license": "MIT",
     "authors": [
         {
             "name": "Amir",
