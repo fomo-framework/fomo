@@ -16,7 +16,8 @@
         "illuminate/database": "^8.40",
         "illuminate/pagination": "^8.40",
         "symfony/polyfill-ctype": "^1.8",
-        "predis/predis": "^1.1"
+        "predis/predis": "^1.1",
+        "elasticsearch/elasticsearch": "^7.0"
     } ,
     "autoload": {
         "psr-4": {
