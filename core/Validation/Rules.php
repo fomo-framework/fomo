@@ -14,7 +14,7 @@ trait Rules
 
     protected function string(array $parameters): void
     {
-        if (!\is_string($this->request->input($parameters['ruleName'])))
+        if ($this->request->input($parameters['ruleName']) && !\is_string($this->request->input($parameters['ruleName'])))
             array_push($this->messages , $parameters['message']);
     }
 
