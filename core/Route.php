@@ -51,13 +51,15 @@ class Route
         if (isset($parameters['prefix']))
             $this->currentGroupPrefix = $previousGroupPrefix . $parameters['prefix'] . '/';
 
+        $previousGroupMiddleware = $this->currentGroupMiddleware;
         if (isset($parameters['middleware']))
             array_push($this->currentGroupMiddleware , $parameters['middleware']);
 
         $callback(Route::class);
+
         $this->currentGroupNamespace = $previousGroupNamespace;
         $this->currentGroupPrefix = $previousGroupPrefix;
-        $this->currentGroupMiddleware = [];
+        $this->currentGroupMiddleware = $previousGroupMiddleware;
     }
 
     protected function addRoute(string $method , string $route , string|array $callback): void
@@ -65,6 +67,8 @@ class Route
         $route = $this->currentGroupPrefix . $route;
 
         $route = preg_replace('/^\//','' , $route);
+
+        $route = preg_replace('/\/\//' , '' , $route);
 
         $route = preg_replace('/\//' , '\\/' , $route);
 
