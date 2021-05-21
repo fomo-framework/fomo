@@ -2,40 +2,61 @@
 
 namespace Core;
 
-use Core\Response;
+use Illuminate\Database\Query\Builder;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
+use stdClass;
 
 class JsonResponse
 {
-    public function collection($resource): Response
+    protected Collection|LengthAwarePaginator|Builder|stdClass $collection;
+
+    protected array $response = [];
+
+    protected bool $isRelation;
+
+    public function __construct(Collection|LengthAwarePaginator|Builder|stdClass $collection , bool $isRelation = false)
     {
-        $array = array();
-
-        foreach ($resource as $value){
-            array_push($array , $this->toArray($value));
-        }
-
-        if (method_exists($resource , 'perPage'))
-            return json([
-                'data' => $array ,
-                'meta' => [
-                    'count' => $resource->lastItem() ,
-                    'lastPage' => ceil($resource->lastItem() / $resource->perPage()) ,
-                    'prePage' => $resource->perPage() ,
-                ]
-            ] , 200);
-
-        return json([
-            'data' => $array ,
-        ] , 200);
+        $this->collection = $collection;
+        $this->isRelation = $isRelation;
+        if ($collection instanceof LengthAwarePaginator || $collection instanceof Collection)
+            $this->process();
     }
 
-    public function single($resource): Response
+    public function collection(): Response|array
     {
-        $resource = $this->toArray($resource);
-        return json([
-            'data' => $resource
-        ] , 200);
+        if ($this->isRelation == true)
+        {
+            return $this->response;
+        }
 
+        if (method_exists($this->collection , 'perPage'))
+            return json([
+                'data' => $this->response ,
+                'meta' => [
+                    'count' => $this->collection->lastItem() ,
+                    'lastPage' => ceil($this->collection->lastItem() / $this->collection->perPage()) ,
+                    'prePage' => $this->collection->perPage() ,
+                ]
+            ]);
+
+        return json([
+            'data' => $this->response ,
+        ]);
+    }
+
+    public function single(): Response
+    {
+        return json([
+            'data' => $this->toArray($this->collection)
+        ]);
+    }
+
+    protected function process(): void
+    {
+        $this->collection->map(function ($collection){
+            array_push($this->response , $this->toArray($collection));
+        });
     }
 
     protected function toArray($request)
