@@ -72,7 +72,7 @@ class Route
 
         $route = preg_replace('/\//' , '\\/' , $route);
 
-        $route = preg_replace('/\{([a-z]+)\}/' , '(?<\1>[a-z0-9-]+)' , $route);
+        $route = preg_replace('/\{([a-zA-Z]+)\}/' , '(?<\1>[a-z0-9-]+)' , $route);
 
         $route = '/^\/' . $route . '\/?$/i';
 
