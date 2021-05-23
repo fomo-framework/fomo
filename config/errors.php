@@ -12,8 +12,10 @@ return [
         'max' => 'فیلد :attribute نباید بیشتر از :value باشد' ,
         'min' => 'فیلد :attribute نباید کمتر از :value باشد' ,
         'size' => 'فیلد :attribute باید برابر :value باشد' ,
+        'after' => 'فیلد :attribute باید بزرگ تر از فیلد :value باشد' ,
+        'before' => 'فیلد :attribute باید کوچک تر از فیلد :value باشد' ,
         'in' => 'فیلد :attribute باید برابر یکی از مقادیر :value باشد' ,
-        'date' => 'فیلد :attribute باید تاریخ باشد' ,
+        'date' => 'فیلد :attribute باید از نوع تاریخ باشد' ,
         'nationalCode' => 'کد ملی وارد شده در فیلد :attribute اشتباه است' ,
     ],
 

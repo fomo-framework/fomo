@@ -27,6 +27,6 @@ class AuthMiddleware
     {
         return json([
             'message' => 'Unauthorized'
-        ] , 401);
+        ] , Response::HTTP_UNAUTHORIZED);
     }
 }
