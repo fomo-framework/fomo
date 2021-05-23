@@ -34,8 +34,8 @@ class JsonResponse
             return json([
                 'data' => $this->response ,
                 'meta' => [
-                    'count' => $this->collection->lastItem() ,
-                    'lastPage' => ceil($this->collection->lastItem() / $this->collection->perPage()) ,
+                    'count' => $this->collection->total() ,
+                    'lastPage' => ceil($this->collection->total() / $this->collection->perPage()) ,
                     'prePage' => $this->collection->perPage() ,
                 ]
             ]);
