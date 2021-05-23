@@ -68,15 +68,26 @@ trait Rules
 
     protected function date(array $parameters): void
     {
-        $dateArray  = explode('-', $this->request->input($parameters['ruleName']));
-        if (count($dateArray) == 3){
-            if (! checkdate((int) $dateArray[1], (int) $dateArray[2], (int) $dateArray[0]))
-                array_push($this->messages , $parameters['message']);
+        if (! $this->validateDate($this->request->input($parameters['ruleName']) , is_null($parameters['value']) ? 'Y-m-d H:i:s' : $parameters['value']))
+            array_push($this->messages , $parameters['message']);
+    }
 
-            return;
-        }
+    protected function after(array $parameters): void
+    {
+        if ($this->request->input($parameters['ruleName']) < $this->request->input($parameters['value']))
+            array_push($this->messages , $parameters['message']);
+    }
 
-        array_push($this->messages , $parameters['message']);
+    protected function before(array $parameters): void
+    {
+        if ($this->request->input($parameters['ruleName']) > $this->request->input($parameters['value']))
+            array_push($this->messages , $parameters['message']);
+    }
+
+    protected function validateDate($date, $format = 'Y-m-d H:i:s'): bool
+    {
+        $d = DateTime::createFromFormat($format, $date);
+        return $d && $d->format($format) == $date;
     }
 
     protected function in(array $parameters): void
