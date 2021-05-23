@@ -105,10 +105,10 @@ class Route
         $this->routes[$route] = $routeParameters;
     }
 
-    protected function checkMatchRoute(string $url): bool|string
+    protected function checkMatchRoute(string $url , string $method): bool|string
     {
         foreach ($this->routes as $route => $parameters) {
-            if(preg_match($route , $url , $matches)) {
+            if(preg_match($route , $url , $matches) && $this->routes[$route]['method'] == $method) {
                 foreach ($matches as $key => $match) {
                     if(is_string($key)) {
                         $this->routes[$route]['params'][$key] = $match;
@@ -148,7 +148,7 @@ class Route
             if (! method_exists($middleware , 'handle')){
                 return json([
                     'message' => "middleware $middleware or method handle not exist"
-                ] , 404);
+                ] , Response::HTTP_NOT_FOUND);
             }
 
             $middleware = new $middleware();
@@ -177,27 +177,27 @@ class Route
         if ($route === false)
             return json([
                 'message' => 'error'
-            ] , 400);
+            ] , Response::HTTP_BAD_REQUEST);
 
 
-        $checkMatch = $this->checkMatchRoute($route);
+        $checkMatch = $this->checkMatchRoute($route , $method);
         if ($checkMatch === false)
             return json([
                 'message' => 'not found'
-            ] , 404);
+            ] , Response::HTTP_NOT_FOUND);
 
         $checkMethod = $this->checkMatchMethod($checkMatch , $method);
         if ($checkMethod === false)
             return json([
                 'message' => 'this is route not supported this method'
-            ] , 405);
+            ] , Response::HTTP_METHOD_NOT_ALLOWED);
 
 
         $checkController = $this->checkExistController($checkMatch);
         if ($checkController === false)
             return json([
                 'message' => 'controller or method not found'
-            ] , 404);
+            ] , Response::HTTP_NOT_FOUND);
 
 
         if (! empty($this->routes[$checkMatch]['middleware']))
