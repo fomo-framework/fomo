@@ -2,18 +2,24 @@
 
 namespace Core;
 
+use Elasticsearch\Client;
 use Elasticsearch\ClientBuilder;
 
 class Elastic
 {
-    public static function __callStatic(string $method, array $arguments)
+    protected static Client $_instance;
+
+    public static function setInstance()
     {
         $config = include "config/elastic.php";
 
-        $elastic = ClientBuilder::create()
+        self::$_instance = ClientBuilder::create()
             ->setHosts($config)
             ->build();
+    }
 
-        return $elastic->$method(...$arguments);
+    public static function getInstance(): Client
+    {
+        return self::$_instance;
     }
 }

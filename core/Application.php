@@ -38,6 +38,7 @@ class Application
         $this->router = include "route/api.php";
 
         Http::requestClass(Request::class);
+        Elastic::setInstance();
 
         $this->database();
     }

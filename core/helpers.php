@@ -1,8 +1,10 @@
 <?php
 
+use Core\Elastic;
 use Core\Request;
 use Core\Authentication\Auth;
 use Core\Response;
+use Elasticsearch\Client;
 
 define('BASE_PATH', realpath(__DIR__.'/../'));
 
@@ -60,4 +62,9 @@ function bearerToken(): string
 function auth(): Auth
 {
     return Auth::getInstance();
+}
+
+function elastic(): Client
+{
+    return Elastic::getInstance();
 }
