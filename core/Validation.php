@@ -11,7 +11,7 @@ class Validation
     protected array $rules = [];
     protected array $errorDefaultMessage = [];
     protected array $messages = [];
-    protected ?Request $request = null;
+    protected Request $request;
 
     public function __construct(array $rules)
     {
