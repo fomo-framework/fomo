@@ -68,3 +68,12 @@ function elastic(): Client
 {
     return Elastic::getInstance();
 }
+
+function redirect(string $location, int $status = 302, array $headers = []): Response
+{
+    $response = new Response($status, ['Location' => $location]);
+    if (!empty($headers)) {
+        $response->withHeaders($headers);
+    }
+    return $response;
+}
