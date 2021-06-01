@@ -2,6 +2,7 @@
 
 namespace Core\Validation;
 
+use Core\DB;
 use DateTime;
 
 trait Rules
@@ -122,6 +123,35 @@ trait Rules
             return;
 
         array_push($this->messages , $parameters['message']);
+    }
+
+    private function checkDB(array $parameters): bool
+    {
+        if (str_contains($parameters['value'] , ','))
+            $table = explode(',' , $parameters['value']);
+
+        if (isset($table))
+            $check = DB::table($table[0])->where($table[1] , $this->request->input($parameters['ruleName']))->exists();
+        else
+            $check = DB::table($parameters['value'])->where('id' , $this->request->input($parameters['ruleName']))->exists();
+
+        return $check;
+    }
+
+    protected function exists(array $parameters): void
+    {
+        $check = $this->checkDB($parameters);
+
+        if (! $check)
+            array_push($this->messages , $parameters['message']);
+    }
+
+    protected function unique(array $parameters): void
+    {
+        $check = $this->checkDB($parameters);
+
+        if ($check)
+            array_push($this->messages , $parameters['message']);
     }
 
 
