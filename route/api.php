@@ -1,10 +1,9 @@
 <?php
 
-use App\Middleware\ExampleMiddleware;
 use Core\Route;
 
 $router = new Route();
 
-//$router->get('/test' , 'ExampleController@test');
+//$router->get('/test' , [ExampleController::class , 'test']);
 
 return $router;
