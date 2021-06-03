@@ -1,11 +1,12 @@
 <?php
 
-namespace Core\Authentication;
+namespace Core\Authentication\Middleware;
 
 use Core\DB;
 use Core\Response;
+use Core\Authentication\Auth as AuthParent;
 
-class AuthMiddleware
+class Auth
 {
     public function handle(): bool|Response
     {
@@ -15,7 +16,7 @@ class AuthMiddleware
                 ->join('users' , 'access_tokens.user_id' , '=' , 'users.id')->select('users.*')->first();
 
             if ($user){
-                Auth::setInstance($user);
+                AuthParent::setInstance($user);
                 return true;
             }
         }
