@@ -1,8 +1,7 @@
 <?php
-
 namespace App\Resource;
 
-use Core\JsonResponse;
+use Tower\JsonResponse;
 
 class ExampleResource extends JsonResponse
 {

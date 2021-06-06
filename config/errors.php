@@ -2,29 +2,29 @@
 
 return [
     'message' => [
-        'required' => 'فیلد :attribute اجباری است' ,
-        'string' => 'فیلد :attribute باید رشته باشد' ,
-        'integer' => 'فیلد :attribute باید عدد باشد' ,
-        'boolean' => 'فیلد :attribute باید صحیح یا غلط باشد' ,
-        'array' => 'فیلد :attribute باید آرایه باشد' ,
-        'email' => 'فیلد :attribute باید آدرس ایمیل باشد' ,
-        'regex' => 'الگو فیلد :attribute اشتباه است' ,
-        'max' => 'فیلد :attribute نباید بیشتر از :value باشد' ,
-        'min' => 'فیلد :attribute نباید کمتر از :value باشد' ,
-        'size' => 'فیلد :attribute باید برابر :value باشد' ,
-        'after' => 'فیلد :attribute باید بزرگ تر از فیلد :value باشد' ,
-        'before' => 'فیلد :attribute باید کوچک تر از فیلد :value باشد' ,
-        'in' => 'فیلد :attribute باید برابر یکی از مقادیر :value باشد' ,
-        'date' => 'فیلد :attribute باید از نوع تاریخ باشد' ,
-        'exists' => 'چنین :attribute وجود ندارد' ,
-        'unique' => 'چنین :attribute وجود دارد' ,
-        'nationalCode' => 'کد ملی وارد شده در فیلد :attribute اشتباه است' ,
+        'required' => 'The :attribute is mandatory' ,
+        'string' => 'The :attribute must be a string' ,
+        'integer' => 'The :attribute must be a number' ,
+        'boolean' => 'The :attribute must be true or false' ,
+        'array' => 'The :attribute must be an array' ,
+        'email' => 'The :attribute must be the email address' ,
+        'regex' => 'The template :attribute is wrong' ,
+        'max' => 'The :attribute field should not be greater than :value' ,
+        'min' => 'The :attribute field should not be less than :value' ,
+        'size' => 'The field :attribute must be equal to :value' ,
+        'after' => 'The :attribute field must be larger than the :value field' ,
+        'before' => 'The :attribute field must be smaller than the :value field' ,
+        'in' => 'The field :attribute must be equal to one of the values :value' ,
+        'date' => 'The :attribute must be of date type' ,
+        'exists' => 'Such :attribute does not exist' ,
+        'unique' => 'Such :attribute exists' ,
+        'nationalCode' => 'The national code entered in the :attribute field is incorrect' ,
     ],
 
     'attribute' => [
-        'name' => 'نام' ,
-        'family' => 'نام خانوادگی' ,
-        'phone' => 'تلفن همراه' ,
-        'nationalCode' => 'کد ملی'
+        'name' => 'name' ,
+        'family' => 'family' ,
+        'phone' => 'phone' ,
+        'nationalCode' => 'national code'
     ]
 ];

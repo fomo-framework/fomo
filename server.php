@@ -1,12 +1,12 @@
 <?php
 
-use Core\Application;
+use Tower\Application;
 use Workerman\Connection\TcpConnection;
 use Workerman\Worker;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$config = include "config/server.php";
+$config = include configPath() . "server.php";
 
 Worker::$pidFile = $config['pid_file'];
 Worker::$stdoutFile = $config['stdout_file'];
