@@ -1,5 +1,5 @@
 <?php
-namespace App\Resource;
+namespace App\Resources;
 
 use Tower\JsonResponse;
 
