@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c74c07952339b8adcf3f977390f2cf5d",
+    "content-hash": "b6b9db0a1b2fdf4348d45df931878684",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -2235,16 +2235,16 @@
         },
         {
             "name": "tower/tower-framework",
-            "version": "v1.1.0",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amirfaramarzi/tower-framework.git",
-                "reference": "c7124f32027e689394da1361831a9ea8e97f70b0"
+                "reference": "9bdd8e7fe19148114675fa73879724634c687511"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/c7124f32027e689394da1361831a9ea8e97f70b0",
-                "reference": "c7124f32027e689394da1361831a9ea8e97f70b0",
+                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/9bdd8e7fe19148114675fa73879724634c687511",
+                "reference": "9bdd8e7fe19148114675fa73879724634c687511",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2285,9 +2285,9 @@
             "description": "The Base Tower Framework",
             "support": {
                 "issues": "https://github.com/amirfaramarzi/tower-framework/issues",
-                "source": "https://github.com/amirfaramarzi/tower-framework/tree/v1.1.0"
+                "source": "https://github.com/amirfaramarzi/tower-framework/tree/v1.1.2"
             },
-            "time": "2021-06-06T12:02:30+00:00"
+            "time": "2021-06-07T07:57:23+00:00"
         },
         {
             "name": "voku/portable-ascii",
@@ -2431,9 +2431,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
