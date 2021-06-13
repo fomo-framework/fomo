@@ -1,9 +1,9 @@
 <?php
 namespace App\Resources;
 
-use Tower\JsonResponse;
+use Tower\JsonResource;
 
-class ExampleResource extends JsonResponse
+class ExampleResource extends JsonResource
 {
     protected function toArray($request)
     {

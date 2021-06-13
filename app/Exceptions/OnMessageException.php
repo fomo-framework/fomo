@@ -15,7 +15,9 @@ class OnMessageException extends \Exception implements Contract
     public function handle(): Response
     {
         return json([
-            'message' => 'the operation failed'
+            'message' => $this->getMessage() ,
+            'file' => $this->getFile() ,
+            'line' => $this->getLine() ,
         ] , Response::HTTP_INTERNAL_SERVER_ERROR);
     }
 }
