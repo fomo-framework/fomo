@@ -2163,16 +2163,16 @@
         },
         {
             "name": "tower/tower-framework",
-            "version": "v2.2.0",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amirfaramarzi/tower-framework.git",
-                "reference": "db0330774bc5eca9bdf6dee61bc6af649b05b21e"
+                "reference": "aa71f196bc963f153da0dacfc006e32d9d745509"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/db0330774bc5eca9bdf6dee61bc6af649b05b21e",
-                "reference": "db0330774bc5eca9bdf6dee61bc6af649b05b21e",
+                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/aa71f196bc963f153da0dacfc006e32d9d745509",
+                "reference": "aa71f196bc963f153da0dacfc006e32d9d745509",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2212,9 +2212,9 @@
             "description": "The Base Tower Framework",
             "support": {
                 "issues": "https://github.com/amirfaramarzi/tower-framework/issues",
-                "source": "https://github.com/amirfaramarzi/tower-framework/tree/v2.2.0"
+                "source": "https://github.com/amirfaramarzi/tower-framework/tree/v2.2.1"
             },
-            "time": "2021-06-18T12:57:03+00:00"
+            "time": "2021-06-18T13:29:37+00:00"
         },
         {
             "name": "voku/portable-ascii",
