@@ -1,5 +1,7 @@
 # Tower
 
+We came to force you to build fast programs
+
 ## Installation
 ```composer create-project tower/tower  ```  
 
