@@ -6,6 +6,10 @@ use Workerman\Worker;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+$dotenv = Dotenv\Dotenv::createImmutable(basePath());
+$dotenv->load();
+
+
 $config = include configPath() . "server.php";
 
 Worker::$pidFile = $config['pid_file'];
