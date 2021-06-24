@@ -2,11 +2,11 @@
 
 return [
     'listen'               => 'http://127.0.0.1:9000',
-    'timezone'               => 'UTC',
+    'timezone'               => env('APP_TIMEZONE'),
     'transport'            => 'tcp',
     'context'              => [],
-    'name'                 => 'tower',
-    'count'                => cpuCoreCount() * 2 ,
+    'name'                 => env('APP_NAME'),
+    'count'                => env('APP_WORKER_COUNT' , cpuCoreCount() * 2) ,
     'user'                 => '',
     'group'                => '',
     'pid_file'             => storagePath() . 'tower.pid',
