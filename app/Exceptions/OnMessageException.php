@@ -1,13 +1,12 @@
 <?php
 namespace App\Exceptions;
 
-use Throwable;
-use Tower\Exception\Contract;
+use Exception;
 use Tower\Response;
 
-class OnMessageException extends \Exception implements Contract
+class OnMessageException extends Exception
 {
-    public function __construct(Throwable $error)
+    public function __construct(Exception $error)
     {
         parent::__construct($error->getMessage() , $error->getCode(), $error->getPrevious());
     }

@@ -1,10 +1,10 @@
 <?php
 namespace App\Exceptions;
 
-use Tower\Exception\Contract;
+use Exception;
 use Tower\Response;
 
-class MethodNotAllowedException extends \Exception implements Contract
+class MethodNotAllowedException extends Exception
 {
     public function __construct(string $method)
     {

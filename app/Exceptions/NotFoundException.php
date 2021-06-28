@@ -1,10 +1,10 @@
 <?php
 namespace App\Exceptions;
 
-use Tower\Exception\Contract;
+use Exception;
 use Tower\Response;
 
-class NotFoundException extends \Exception implements Contract
+class NotFoundException extends Exception
 {
     public function handle(): Response
     {
