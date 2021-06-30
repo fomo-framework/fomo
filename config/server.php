@@ -2,10 +2,10 @@
 
 return [
     'listen'               => 'http://127.0.0.1:9000',
-    'timezone'               => env('APP_TIMEZONE'),
+    'timezone'               => env('APP_TIMEZONE' , 'UTC'),
     'transport'            => 'tcp',
     'context'              => [],
-    'name'                 => env('APP_NAME'),
+    'name'                 => env('APP_NAME' , 'Tower'),
     'count'                => env('APP_WORKER_COUNT' , cpuCoreCount() * 2) ,
     'user'                 => '',
     'group'                => '',
