@@ -2,7 +2,7 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Tower\JobWorker;
+use Tower\SchedulingWorker;
 use Workerman\Worker;
 
 $dotenv = Dotenv\Dotenv::createImmutable(basePath());
@@ -16,7 +16,7 @@ $worker->name = $config['name'];
 
 date_default_timezone_set($config['timezone']);
 
-$jobWorker = new JobWorker();
+$jobWorker = new SchedulingWorker();
 
 $worker->onWorkerStart = [$jobWorker, 'workerRun'];
 
