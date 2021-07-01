@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c51817c5dee8b2e972700520a0f90c62",
+    "content-hash": "9192d611c0e5612aac7afe7e6cee0ba4",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -2310,16 +2310,16 @@
         },
         {
             "name": "tower/tower-framework",
-            "version": "v2.9.4",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amirfaramarzi/tower-framework.git",
-                "reference": "b164d77fbb9ec9a3d8e1f4c63007705cd39a0b33"
+                "reference": "6234d7c15589106d99d00256bdb3460eb3abe9d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/b164d77fbb9ec9a3d8e1f4c63007705cd39a0b33",
-                "reference": "b164d77fbb9ec9a3d8e1f4c63007705cd39a0b33",
+                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/6234d7c15589106d99d00256bdb3460eb3abe9d9",
+                "reference": "6234d7c15589106d99d00256bdb3460eb3abe9d9",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2361,9 +2361,9 @@
             "description": "The Base Tower Framework",
             "support": {
                 "issues": "https://github.com/amirfaramarzi/tower-framework/issues",
-                "source": "https://github.com/amirfaramarzi/tower-framework/tree/v2.9.4"
+                "source": "https://github.com/amirfaramarzi/tower-framework/tree/v1.0.0"
             },
-            "time": "2021-07-01T06:32:12+00:00"
+            "time": "2021-07-01T10:47:03+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
