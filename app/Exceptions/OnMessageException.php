@@ -7,6 +7,13 @@ use Tower\Response;
 
 class OnMessageException extends Exception
 {
+    public function __construct(string $message , string $file , string $line)
+    {
+        $this->message = $message;
+        $this->file = $file;
+        $this->line = $line;
+    }
+
     public function handle(): Response
     {
         return json([
