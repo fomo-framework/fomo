@@ -7,11 +7,6 @@ use Tower\Response;
 
 class OnMessageException extends Exception
 {
-    public function __construct(Exception $error)
-    {
-        parent::__construct($error->getMessage() , $error->getCode(), $error->getPrevious());
-    }
-
     public function handle(): Response
     {
         return json([
