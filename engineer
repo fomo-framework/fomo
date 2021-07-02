@@ -4,7 +4,7 @@ use Tower\Engineer;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$engineer = new Engineer('1.0.3');
+$engineer = new Engineer('1.0.4');
 
 
 
