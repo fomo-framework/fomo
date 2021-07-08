@@ -372,7 +372,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.49.1",
+            "version": "v8.49.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -432,7 +432,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v8.49.1",
+            "version": "v8.49.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -489,7 +489,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.49.1",
+            "version": "v8.49.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -543,16 +543,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v8.49.1",
+            "version": "v8.49.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "45c824522d58361579ce6934e3a1649bda339b25"
+                "reference": "aa146b8d27b8b1efe0becafd5e25580b47174638"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/45c824522d58361579ce6934e3a1649bda339b25",
-                "reference": "45c824522d58361579ce6934e3a1649bda339b25",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/aa146b8d27b8b1efe0becafd5e25580b47174638",
+                "reference": "aa146b8d27b8b1efe0becafd5e25580b47174638",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -613,11 +613,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-07-02T16:38:22+00:00"
+            "time": "2021-07-06T14:06:38+00:00"
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.49.1",
+            "version": "v8.49.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -669,16 +669,16 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v8.49.1",
+            "version": "v8.49.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
-                "reference": "7fb6c22eab98435e1ea0d5564cb17f0d154a1c25"
+                "reference": "337a7c3663b82fa7656d0462b12ab1f8139cdf78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/pagination/zipball/7fb6c22eab98435e1ea0d5564cb17f0d154a1c25",
-                "reference": "7fb6c22eab98435e1ea0d5564cb17f0d154a1c25",
+                "url": "https://api.github.com/repos/illuminate/pagination/zipball/337a7c3663b82fa7656d0462b12ab1f8139cdf78",
+                "reference": "337a7c3663b82fa7656d0462b12ab1f8139cdf78",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -721,7 +721,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-06-28T13:56:26+00:00"
+            "time": "2021-07-05T15:30:07+00:00"
         },
         {
             "name": "illuminate/support",
@@ -2310,16 +2310,16 @@
         },
         {
             "name": "tower/tower-framework",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amirfaramarzi/tower-framework.git",
-                "reference": "9634d18dadcc724d3188d981675265475a0caaed"
+                "reference": "8cc8205ffbe3f39406284ea33212071980230b8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/9634d18dadcc724d3188d981675265475a0caaed",
-                "reference": "9634d18dadcc724d3188d981675265475a0caaed",
+                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/8cc8205ffbe3f39406284ea33212071980230b8a",
+                "reference": "8cc8205ffbe3f39406284ea33212071980230b8a",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2361,9 +2361,9 @@
             "description": "The Base Tower Framework",
             "support": {
                 "issues": "https://github.com/amirfaramarzi/tower-framework/issues",
-                "source": "https://github.com/amirfaramarzi/tower-framework/tree/v1.0.7"
+                "source": "https://github.com/amirfaramarzi/tower-framework/tree/v1.0.8"
             },
-            "time": "2021-07-05T08:59:43+00:00"
+            "time": "2021-07-08T15:19:17+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
