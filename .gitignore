@@ -3,3 +3,4 @@
 .env
 /.vscode
 /storage/logs/*
+!/storage/logs/.gitignore
