@@ -11,6 +11,7 @@
         }
     ],
     "require": {
+        "php" : ">=8.0",
         "tower/tower-framework": "^1.0"
     },
     "autoload": {
