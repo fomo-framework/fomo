@@ -4,3 +4,4 @@
 /.vscode
 /storage/logs/*
 !/storage/logs/.gitignore
+.phpunit.result.cache
