@@ -28,6 +28,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "fakerphp/faker": "^1.15"
+        "fakerphp/faker": "^1.15",
+        "phpunit/phpunit": "^9.5"
     }
 }
