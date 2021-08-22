@@ -2092,16 +2092,16 @@
         },
         {
             "name": "tower/tower-framework",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amirfaramarzi/tower-framework.git",
-                "reference": "5c7f8aab56372f398d649f0680cb8c557fa1b001"
+                "reference": "58e9d45f3ac64931d6a8efe084f7409a81054d28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/5c7f8aab56372f398d649f0680cb8c557fa1b001",
-                "reference": "5c7f8aab56372f398d649f0680cb8c557fa1b001",
+                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/58e9d45f3ac64931d6a8efe084f7409a81054d28",
+                "reference": "58e9d45f3ac64931d6a8efe084f7409a81054d28",
                 "shasum": ""
             },
             "require": {
@@ -2136,7 +2136,7 @@
                 }
             ],
             "description": "The Base Tower Framework",
-            "time": "2021-08-21T13:57:31+00:00"
+            "time": "2021-08-22T11:54:15+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
