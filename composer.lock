@@ -324,16 +324,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.55.0",
+            "version": "v8.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "c768da2752d451d4a3b319433f29249d0898d6a4"
+                "reference": "dd68b267ada1893126d53792b6c57b19e95a9d04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/c768da2752d451d4a3b319433f29249d0898d6a4",
-                "reference": "c768da2752d451d4a3b319433f29249d0898d6a4",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/dd68b267ada1893126d53792b6c57b19e95a9d04",
+                "reference": "dd68b267ada1893126d53792b6c57b19e95a9d04",
                 "shasum": ""
             },
             "require": {
@@ -370,11 +370,11 @@
             ],
             "description": "The Illuminate Collections package.",
             "homepage": "https://laravel.com",
-            "time": "2021-08-09T13:34:10+00:00"
+            "time": "2021-08-23T08:57:48+00:00"
         },
         {
             "name": "illuminate/container",
-            "version": "v8.55.0",
+            "version": "v8.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -421,16 +421,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.55.0",
+            "version": "v8.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "1a448a53bed5b3399a699321815953594aa72b40"
+                "reference": "e4fa45682e8b558ccca02829e8e6e521ff9458d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/1a448a53bed5b3399a699321815953594aa72b40",
-                "reference": "1a448a53bed5b3399a699321815953594aa72b40",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/e4fa45682e8b558ccca02829e8e6e521ff9458d2",
+                "reference": "e4fa45682e8b558ccca02829e8e6e521ff9458d2",
                 "shasum": ""
             },
             "require": {
@@ -461,20 +461,20 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2021-08-13T13:58:11+00:00"
+            "time": "2021-08-19T13:06:39+00:00"
         },
         {
             "name": "illuminate/database",
-            "version": "v8.55.0",
+            "version": "v8.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "6bdddd64ca9305db0e9d75b917378d159fa5807e"
+                "reference": "18c2660dd2d5398263907d5717f0a611b901a05a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/6bdddd64ca9305db0e9d75b917378d159fa5807e",
-                "reference": "6bdddd64ca9305db0e9d75b917378d159fa5807e",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/18c2660dd2d5398263907d5717f0a611b901a05a",
+                "reference": "18c2660dd2d5398263907d5717f0a611b901a05a",
                 "shasum": ""
             },
             "require": {
@@ -525,11 +525,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2021-08-17T13:51:48+00:00"
+            "time": "2021-08-19T19:38:53+00:00"
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.55.0",
+            "version": "v8.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -571,7 +571,7 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v8.55.0",
+            "version": "v8.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -617,16 +617,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.55.0",
+            "version": "v8.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "fa99f391a9f51b3c6ea32a87f89fb89f5ed91211"
+                "reference": "586f77ee7f8568ecc60866f171074dccfbe69db5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/fa99f391a9f51b3c6ea32a87f89fb89f5ed91211",
-                "reference": "fa99f391a9f51b3c6ea32a87f89fb89f5ed91211",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/586f77ee7f8568ecc60866f171074dccfbe69db5",
+                "reference": "586f77ee7f8568ecc60866f171074dccfbe69db5",
                 "shasum": ""
             },
             "require": {
@@ -677,7 +677,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2021-08-16T13:24:30+00:00"
+            "time": "2021-08-22T17:54:36+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -2092,16 +2092,16 @@
         },
         {
             "name": "tower/tower-framework",
-            "version": "v1.3.2",
+            "version": "v1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amirfaramarzi/tower-framework.git",
-                "reference": "91a357e56cc3d974951ef9285d3a329246b51a0b"
+                "reference": "9e4bd01a821815f1ee7dc4324496e4074e90464e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/91a357e56cc3d974951ef9285d3a329246b51a0b",
-                "reference": "91a357e56cc3d974951ef9285d3a329246b51a0b",
+                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/9e4bd01a821815f1ee7dc4324496e4074e90464e",
+                "reference": "9e4bd01a821815f1ee7dc4324496e4074e90464e",
                 "shasum": ""
             },
             "require": {
@@ -2136,7 +2136,7 @@
                 }
             ],
             "description": "The Base Tower Framework",
-            "time": "2021-08-24T12:59:24+00:00"
+            "time": "2021-08-25T08:39:04+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
