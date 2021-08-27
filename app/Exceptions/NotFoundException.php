@@ -9,7 +9,7 @@ class NotFoundException extends Exception
 {
     public function handle(): Response
     {
-        return json([
+        return response()->json([
             'message' => 'not found'
         ] , Response::HTTP_NOT_FOUND);
     }
