@@ -9,7 +9,7 @@ class AuthenticationException extends Exception
 {
     public function handle(): Response
     {
-        return json([
+        return response()->json([
             'message' => 'Unauthorized'
         ] , Response::HTTP_UNAUTHORIZED);
     }
