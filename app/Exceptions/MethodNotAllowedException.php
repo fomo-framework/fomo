@@ -14,7 +14,7 @@ class MethodNotAllowedException extends Exception
 
     public function handle(): Response
     {
-        return json([
+        return response()->json([
             "message" => "this is route supported {$this->getMessage()} method"
         ] , Response::HTTP_METHOD_NOT_ALLOWED);
     }
