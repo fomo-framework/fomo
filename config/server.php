@@ -2,8 +2,8 @@
 
 return [
     'listen'               => 'http://127.0.0.1:9000',
-    'timezone'               => env('APP_TIMEZONE' , 'UTC'),
-    'faker_locale'            => 'en_US',
+    'timezone'             => env('APP_TIMEZONE' , 'UTC'),
+    'faker_locale'         => 'en_US',
     'transport'            => 'tcp',
     'context'              => [],
     'name'                 => env('APP_NAME' , 'Tower'),
