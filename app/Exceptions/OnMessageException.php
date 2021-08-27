@@ -16,7 +16,7 @@ class OnMessageException extends Exception
 
     public function handle(): Response
     {
-        return json([
+        return response()->json([
             'message' => $this->getMessage() ,
             'file' => $this->getFile() ,
             'line' => $this->getLine() ,
