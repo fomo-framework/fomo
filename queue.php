@@ -24,6 +24,11 @@ if ($watch == 1 && $daemonize == 1){
     return;
 }
 
+if (!class_exists('App\Jobs\Kernel')){
+    echo Color::error('No job found');
+    return;
+}
+
 $serverConfig = include configPath() . "server.php";
 $appConfig = include configPath() . "app.php";
 
