@@ -25,14 +25,14 @@ if ($watch == 1 && $daemonize == 1){
 }
 
 if (!class_exists('App\Jobs\Kernel')){
-    echo Color::error('No job found');
+    echo Color::error('no job found');
     return;
 }
 
+Dotenv::createImmutable(basePath())->load();
+
 $serverConfig = include configPath() . "server.php";
 $appConfig = include configPath() . "app.php";
-
-Dotenv::createImmutable(basePath())->load();
 
 Worker::$pidFile = storagePath() . 'queue.pid';
 Worker::$stdoutFile = storagePath() . 'logs/queue.log';
