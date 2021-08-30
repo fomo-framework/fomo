@@ -24,10 +24,10 @@ if ($watch == 1 && $daemonize == 1){
     return;
 }
 
+Dotenv::createImmutable(basePath())->load();
+
 $serverConfig = include configPath() . "server.php";
 $appConfig = include configPath() . "app.php";
-
-Dotenv::createImmutable(basePath())->load();
 
 Worker::$pidFile = storagePath() . 'tower.pid';
 Worker::$stdoutFile = storagePath() . 'logs/tower.log';
