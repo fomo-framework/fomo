@@ -24,10 +24,15 @@ if ($watch == 1 && $daemonize == 1){
     return;
 }
 
-$serverConfig = include configPath() . "server.php";
-$appConfig = include configPath() . "app.php";
+if(!class_exists('\App\Scheduling\Kernel')) {
+    echo Color::error('no scheduling found');
+    return;
+}
 
 Dotenv::createImmutable(basePath())->load();
+
+$serverConfig = include configPath() . "server.php";
+$appConfig = include configPath() . "app.php";
 
 Worker::$pidFile = storagePath() . 'scheduling.pid';
 Worker::$stdoutFile = storagePath() . 'logs/scheduling.log';
