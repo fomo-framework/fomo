@@ -319,7 +319,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.57.0",
+            "version": "v8.58.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -369,7 +369,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v8.57.0",
+            "version": "v8.58.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -416,7 +416,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.57.0",
+            "version": "v8.58.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -460,16 +460,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v8.57.0",
+            "version": "v8.58.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "828d1cd4ee824c405f6edc52ab3d333b549be4ee"
+                "reference": "146c58493e02bce86ff19445d4435421fd895337"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/828d1cd4ee824c405f6edc52ab3d333b549be4ee",
-                "reference": "828d1cd4ee824c405f6edc52ab3d333b549be4ee",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/146c58493e02bce86ff19445d4435421fd895337",
+                "reference": "146c58493e02bce86ff19445d4435421fd895337",
                 "shasum": ""
             },
             "require": {
@@ -520,11 +520,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2021-08-26T14:48:34+00:00"
+            "time": "2021-08-30T14:31:29+00:00"
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.57.0",
+            "version": "v8.58.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -566,7 +566,7 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v8.57.0",
+            "version": "v8.58.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -612,7 +612,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.57.0",
+            "version": "v8.58.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -2087,16 +2087,16 @@
         },
         {
             "name": "tower/tower-framework",
-            "version": "v1.5.2",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amirfaramarzi/tower-framework.git",
-                "reference": "bb3de78f0bf7faf08f0d027810b9ba3743fc25cc"
+                "reference": "8373ba58ef25df8af6aba34f46cd6035dc93661c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/bb3de78f0bf7faf08f0d027810b9ba3743fc25cc",
-                "reference": "bb3de78f0bf7faf08f0d027810b9ba3743fc25cc",
+                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/8373ba58ef25df8af6aba34f46cd6035dc93661c",
+                "reference": "8373ba58ef25df8af6aba34f46cd6035dc93661c",
                 "shasum": ""
             },
             "require": {
@@ -2133,7 +2133,7 @@
                 }
             ],
             "description": "The Base Tower Framework",
-            "time": "2021-08-30T11:12:28+00:00"
+            "time": "2021-09-01T11:17:06+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3173,16 +3173,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.8",
+            "version": "9.5.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "191768ccd5c85513b4068bdbe99bb6390c7d54fb"
+                "reference": "ea8c2dfb1065eb35a79b3681eee6e6fb0a6f273b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/191768ccd5c85513b4068bdbe99bb6390c7d54fb",
-                "reference": "191768ccd5c85513b4068bdbe99bb6390c7d54fb",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ea8c2dfb1065eb35a79b3681eee6e6fb0a6f273b",
+                "reference": "ea8c2dfb1065eb35a79b3681eee6e6fb0a6f273b",
                 "shasum": ""
             },
             "require": {
@@ -3268,7 +3268,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-07-31T15:17:34+00:00"
+            "time": "2021-08-31T06:47:40+00:00"
         },
         {
             "name": "sebastian/cli-parser",
