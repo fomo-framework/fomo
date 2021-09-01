@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use PHPUnit\Framework\TestCase as BaseTestCase;
+use Tower\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase
 {
