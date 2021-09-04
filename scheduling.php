@@ -4,6 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 use Dotenv\Dotenv;
 use Tower\Console\Color;
+use Tower\Loader;
 use Tower\SchedulingWorker;
 use Tower\Unemployed;
 use Workerman\Connection\TcpConnection;
@@ -31,8 +32,20 @@ if(!class_exists('\App\Scheduling\Kernel')) {
 
 Dotenv::createImmutable(basePath())->load();
 
-$serverConfig = include configPath() . "server.php";
-$appConfig = include configPath() . "app.php";
+$app = include configPath() . "app.php";
+
+Loader::save([
+    'app' => configPath() . "app.php" ,
+    'database' => configPath() . "database.php" ,
+    'elastic' => configPath() . "elastic.php" ,
+    'mail' => configPath() . "mail.php" ,
+    'redis' => configPath() . "redis.php" ,
+    'server' => configPath() . "server.php" ,
+    'errors' => languagePath() . 'validation/' . $app['locale'] . '/errors.php' ,
+]);
+
+$serverConfig = Loader::get('server');
+$appConfig = Loader::get('app');
 
 Worker::$pidFile = storagePath() . 'scheduling.pid';
 Worker::$stdoutFile = storagePath() . 'logs/scheduling.log';
