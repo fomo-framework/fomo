@@ -5,6 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 use Dotenv\Dotenv;
 use Tower\Console\Color;
 use Tower\JobWorker;
+use Tower\Loader;
 use Tower\Unemployed;
 use Workerman\Connection\TcpConnection;
 use Workerman\Worker;
@@ -31,8 +32,20 @@ if (!class_exists('App\Jobs\Kernel')){
 
 Dotenv::createImmutable(basePath())->load();
 
-$serverConfig = include configPath() . "server.php";
-$appConfig = include configPath() . "app.php";
+$app = include configPath() . "app.php";
+
+Loader::save([
+    'app' => configPath() . "app.php" ,
+    'database' => configPath() . "database.php" ,
+    'elastic' => configPath() . "elastic.php" ,
+    'mail' => configPath() . "mail.php" ,
+    'redis' => configPath() . "redis.php" ,
+    'server' => configPath() . "server.php" ,
+    'errors' => languagePath() . 'validation/' . $app['locale'] . '/errors.php' ,
+]);
+
+$serverConfig = Loader::get('server');
+$appConfig = Loader::get('app');
 
 Worker::$pidFile = storagePath() . 'queue.pid';
 Worker::$stdoutFile = storagePath() . 'logs/queue.log';
