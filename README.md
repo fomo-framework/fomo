@@ -15,7 +15,7 @@ Event extension recommended for better performance
 
 ## Available commands
 ```php server.php start  ```  
-```php server.php start --watch  ```
+```php server.php start --watch  ```  
 ```php server.php start -d  ```  
 ```php server.php status  ```  
 ```php server.php connections```  
