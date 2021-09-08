@@ -545,7 +545,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.58.0",
+            "version": "v8.59.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -595,7 +595,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v8.58.0",
+            "version": "v8.59.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -642,7 +642,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.58.0",
+            "version": "v8.59.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -686,16 +686,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v8.58.0",
+            "version": "v8.59.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "146c58493e02bce86ff19445d4435421fd895337"
+                "reference": "a37cc323d42b1aca90b2ffa2ece23d7be0434b7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/146c58493e02bce86ff19445d4435421fd895337",
-                "reference": "146c58493e02bce86ff19445d4435421fd895337",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/a37cc323d42b1aca90b2ffa2ece23d7be0434b7c",
+                "reference": "a37cc323d42b1aca90b2ffa2ece23d7be0434b7c",
                 "shasum": ""
             },
             "require": {
@@ -746,11 +746,11 @@
                 "orm",
                 "sql"
             ],
-            "time": "2021-08-30T14:31:29+00:00"
+            "time": "2021-09-07T13:25:06+00:00"
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.58.0",
+            "version": "v8.59.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -792,7 +792,7 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v8.58.0",
+            "version": "v8.59.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -838,16 +838,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.58.0",
+            "version": "v8.59.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "5e8f059a5d1f298324e847822b997778a3472128"
+                "reference": "c844dbed8065b6f598efe01e6299149198b0dad3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/5e8f059a5d1f298324e847822b997778a3472128",
-                "reference": "5e8f059a5d1f298324e847822b997778a3472128",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/c844dbed8065b6f598efe01e6299149198b0dad3",
+                "reference": "c844dbed8065b6f598efe01e6299149198b0dad3",
                 "shasum": ""
             },
             "require": {
@@ -898,20 +898,20 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2021-08-25T13:04:37+00:00"
+            "time": "2021-09-06T21:45:30+00:00"
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.52.0",
+            "version": "2.53.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "369c0e2737c56a0f39c946dd261855255a6fccbe"
+                "reference": "f4655858a784988f880c1b8c7feabbf02dfdf045"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/369c0e2737c56a0f39c946dd261855255a6fccbe",
-                "reference": "369c0e2737c56a0f39c946dd261855255a6fccbe",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/f4655858a784988f880c1b8c7feabbf02dfdf045",
+                "reference": "f4655858a784988f880c1b8c7feabbf02dfdf045",
                 "shasum": ""
             },
             "require": {
@@ -923,7 +923,7 @@
             },
             "require-dev": {
                 "doctrine/orm": "^2.7",
-                "friendsofphp/php-cs-fixer": "^2.14 || ^3.0",
+                "friendsofphp/php-cs-fixer": "^3.0",
                 "kylekatarnls/multi-tester": "^2.0",
                 "phpmd/phpmd": "^2.9",
                 "phpstan/extension-installer": "^1.0",
@@ -988,7 +988,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-14T19:10:52+00:00"
+            "time": "2021-09-06T09:29:23+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -2504,16 +2504,16 @@
         },
         {
             "name": "tower/tower-framework",
-            "version": "v1.9.1",
+            "version": "v1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amirfaramarzi/tower-framework.git",
-                "reference": "0121b711a328c140c6001e10f30d7c9963a315de"
+                "reference": "11a6a1888cd59fc8f11d5aa3665b399ee9af275c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/0121b711a328c140c6001e10f30d7c9963a315de",
-                "reference": "0121b711a328c140c6001e10f30d7c9963a315de",
+                "url": "https://api.github.com/repos/amirfaramarzi/tower-framework/zipball/11a6a1888cd59fc8f11d5aa3665b399ee9af275c",
+                "reference": "11a6a1888cd59fc8f11d5aa3665b399ee9af275c",
                 "shasum": ""
             },
             "require": {
@@ -2551,7 +2551,7 @@
                 }
             ],
             "description": "The Base Tower Framework",
-            "time": "2021-09-05T13:32:10+00:00"
+            "time": "2021-09-08T05:57:48+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -2814,21 +2814,21 @@
         },
         {
             "name": "fakerphp/faker",
-            "version": "v1.15.0",
+            "version": "v1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "89c6201c74db25fa759ff16e78a4d8f32547770e"
+                "reference": "271d384d216e5e5c468a6b28feedf95d49f83b35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/89c6201c74db25fa759ff16e78a4d8f32547770e",
-                "reference": "89c6201c74db25fa759ff16e78a4d8f32547770e",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/271d384d216e5e5c468a6b28feedf95d49f83b35",
+                "reference": "271d384d216e5e5c468a6b28feedf95d49f83b35",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0",
-                "psr/container": "^1.0",
+                "psr/container": "^1.0 || ^2.0",
                 "symfony/deprecation-contracts": "^2.2"
             },
             "conflict": {
@@ -2848,7 +2848,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "v1.15-dev"
+                    "dev-main": "v1.16-dev"
                 }
             },
             "autoload": {
@@ -2871,7 +2871,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2021-07-06T20:39:40+00:00"
+            "time": "2021-09-06T14:53:37+00:00"
         },
         {
             "name": "myclabs/deep-copy",
