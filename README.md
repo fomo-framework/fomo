@@ -23,9 +23,10 @@ Event extension recommended for better performance
 ```php server.php restart  ```  
 ```php server.php reload  ```
 
+
 # Benchmarks
 link: https://web-frameworks-benchmark.netlify.app/result
-![benchmark](https://user-images.githubusercontent.com/80312616/133893045-460909bd-e984-4540-b861-701e44cd1f4f.jpg)
+![benchmark](https://user-images.githubusercontent.com/80312616/133893090-7fc34cd4-9a2e-48ce-91d1-912c7cc4bf99.jpg)
 
 
 #
