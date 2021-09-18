@@ -26,7 +26,7 @@ Event extension recommended for better performance
 
 # Benchmarks
 link: https://web-frameworks-benchmark.netlify.app/result
-![benchmark](https://user-images.githubusercontent.com/80312616/133893090-7fc34cd4-9a2e-48ce-91d1-912c7cc4bf99.jpg)
+![benchmark](https://user-images.githubusercontent.com/80312616/133893263-c620c212-37d9-4648-b2b3-5442364fa5b5.jpg)
 
 
 # Documentation
