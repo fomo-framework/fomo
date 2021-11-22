@@ -11,7 +11,7 @@ A POSIX compatible operating system (Linux, OSX, BSD)
 POSIX and PCNTL extensions required   
 Event extension recommended for better performance
 
-
+[![Quality Score][ico-code-quality]][link-code-quality]
 
 ## Available commands
 ```php server.php start  ```  
