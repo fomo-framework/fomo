@@ -11,9 +11,6 @@ A POSIX compatible operating system (Linux, OSX, BSD)
 POSIX and PCNTL extensions required   
 Event extension recommended for better performance
 
-<p align="center">
-<a href="https://scrutinizer-ci.com/g/amirfaramarzi/tower" rel="nofollow"><img alt="Quality Score" src="https://img.shields.io/scrutinizer/g/amirfaramarzi/tower.svg" style="max-width:100%;"></a>
-</p>
 
 ## Available commands
 ```php server.php start  ```  
