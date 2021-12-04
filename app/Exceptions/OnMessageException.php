@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Exception;
 use Tower\Response;
+use Tower\Response\Status;
 
 class OnMessageException extends Exception
 {
@@ -20,6 +21,6 @@ class OnMessageException extends Exception
             'message' => $this->getMessage() ,
             'file' => $this->getFile() ,
             'line' => $this->getLine() ,
-        ] , Response::HTTP_INTERNAL_SERVER_ERROR);
+        ] , Status::HTTP_INTERNAL_SERVER_ERROR->value);
     }
 }
