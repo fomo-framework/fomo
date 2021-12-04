@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Exception;
 use Tower\Response;
+use Tower\Response\Status;
 
 class NotFoundException extends Exception
 {
@@ -11,6 +12,6 @@ class NotFoundException extends Exception
     {
         return response()->json([
             'message' => 'not found'
-        ] , Response::HTTP_NOT_FOUND);
+        ] , Status::HTTP_NOT_FOUND->value);
     }
 }
