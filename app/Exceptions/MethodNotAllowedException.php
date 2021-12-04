@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Exception;
 use Tower\Response;
+use Tower\Response\Status;
 
 class MethodNotAllowedException extends Exception
 {
@@ -16,6 +17,6 @@ class MethodNotAllowedException extends Exception
     {
         return response()->json([
             "message" => "this is route supported {$this->getMessage()} method"
-        ] , Response::HTTP_METHOD_NOT_ALLOWED);
+        ] , Status::HTTP_METHOD_NOT_ALLOWED->value);
     }
 }
