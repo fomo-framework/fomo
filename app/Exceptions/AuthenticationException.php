@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Exception;
 use Tower\Response;
+use Tower\Response\Status;
 
 class AuthenticationException extends Exception
 {
@@ -11,6 +12,6 @@ class AuthenticationException extends Exception
     {
         return response()->json([
             'message' => 'Unauthorized'
-        ] , Response::HTTP_UNAUTHORIZED);
+        ] , Status::HTTP_UNAUTHORIZED->value);
     }
 }
