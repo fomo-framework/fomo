@@ -6,7 +6,7 @@ We came to force you to build fast programs
 ```composer create-project tower/tower  ```  
 
 ## Requires
-PHP 8.0 or Higher  
+PHP 8.1 or Higher  
 A POSIX compatible operating system (Linux, OSX, BSD)  
 POSIX and PCNTL extensions required   
 Event extension recommended for better performance
