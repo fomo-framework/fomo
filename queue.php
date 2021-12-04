@@ -10,6 +10,8 @@ use Tower\Unemployed;
 use Workerman\Connection\TcpConnection;
 use Workerman\Worker;
 
+error_reporting(E_ALL);
+
 $watch = 0;
 $daemonize = 0;
 
