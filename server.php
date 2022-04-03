@@ -29,6 +29,18 @@ if ($watch == 1 && $daemonize == 1){
 
 Dotenv::createImmutable(basePath())->load();
 
+Worker::$onMasterReload = function () {
+    if (function_exists('opcache_get_status')) {
+        if ($status = opcache_get_status()) {
+            if (isset($status['scripts']) && $scripts = $status['scripts']) {
+                foreach (array_keys($scripts) as $file) {
+                    opcache_invalidate($file, true);
+                }
+            }
+        }
+    }
+};
+
 $app = include configPath() . "app.php";
 
 Loader::save([
