@@ -1,4 +1,4 @@
-# Tower
+# FOMO
 
 We came to force you to build fast programs
 
