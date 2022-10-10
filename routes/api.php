@@ -1,5 +1,5 @@
 <?php
 
-/** @var Tower\Router $router */
+/** @var Fomo\Router\Router $router */
 
 //$router->get('/' , ['class' , 'method']);
