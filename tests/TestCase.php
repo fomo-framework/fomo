@@ -2,9 +2,9 @@
 
 namespace Tests;
 
-use Tower\TestCase as BaseTestCase;
+use Fomo\Test\Test;
 
-class TestCase extends BaseTestCase
+class TestCase extends Test
 {
     //
 }

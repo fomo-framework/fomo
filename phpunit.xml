@@ -4,8 +4,8 @@
          verbose="true"
          stopOnFailure="false">
 <testsuites>
-    <testsuite name="Units">
-        <directory suffix="Test.php">./tests/Units</directory>
+    <testsuite name="Tests">
+        <directory suffix="Test.php">./tests</directory>
     </testsuite>
 </testsuites>
 </phpunit>

@@ -1,7 +1,8 @@
 <?php
+
 namespace App\Controllers;
 
-use Tower\BaseController;
+use Fomo\Controller\BaseController;
 
 class Controller extends BaseController
 {
