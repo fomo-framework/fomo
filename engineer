@@ -30,6 +30,8 @@ use Fomo\Commands\Scheduling\Stop as SchedulerStopCommand;
  */
 define('PROJECT_PATH' , realpath('./'));
 const FOMO_VERSION = '2.0.0';
+const ENABLE = true;
+const DISABLE = false;
 
 /*
  * load .env file
