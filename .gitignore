@@ -6,4 +6,4 @@
 !/storage/logs/.gitignore
 .phpunit.result.cache
 dump.rdb
-/storage/*.pid
+/storage/serverState.json
