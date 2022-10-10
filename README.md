@@ -23,7 +23,7 @@ Thank you for considering contributing to the Fomo framework! The contribution g
 
 ## Security Vulnerabilities
 
-We will be happy If you discover any security vulnerabilities or any other issues, please send an email to Amir at [faramarzii.amir@gmail.com] (mailto:faramarzii.amir@gmail.com). All defects will be fixed quickly.
+We will be happy If you discover any security vulnerabilities or any other issues, please send an email to Amir at [faramarzii.amir@gmail.com]. All defects will be fixed quickly.
 
 ## License
 
