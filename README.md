@@ -17,9 +17,13 @@ Fomo supports the following:
 
 Fomo is very fast, simple and for use in large scales (Of course, it still has flaws :grin:)
 
+## Official Documentation
+
+Documentation for installing Fomo can be found on the [Fomo documentation](https://fomo-framework.github.io/docs/) website.
+
 ## Contributing
 
-Thank you for considering contributing to the Fomo framework! The contribution guide can be found in the [Fomo documentation](https://github.com/fomo-framework).
+Thank you for considering contributing to the Fomo framework! The contribution guide can be found in the [Fomo documentation](https://fomo-framework.github.io/docs/).
 
 ## Security Vulnerabilities
 
