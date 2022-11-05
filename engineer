@@ -29,7 +29,7 @@ use Fomo\Commands\Scheduling\Stop as SchedulerStopCommand;
  * create const's and definitions
  */
 define('PROJECT_PATH' , realpath('./'));
-const FOMO_VERSION = '2.0.0';
+const FOMO_VERSION = '2.1.0';
 const ENABLE = true;
 const DISABLE = false;
 
