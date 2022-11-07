@@ -202,16 +202,16 @@
         },
         {
             "name": "fomo/framework",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fomo-framework/framework.git",
-                "reference": "e125f38c871f986c005118dc08fad2b71ab88ea2"
+                "reference": "f056410971bd862cb0120f9f826557b4917cf7da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fomo-framework/framework/zipball/e125f38c871f986c005118dc08fad2b71ab88ea2",
-                "reference": "e125f38c871f986c005118dc08fad2b71ab88ea2",
+                "url": "https://api.github.com/repos/fomo-framework/framework/zipball/f056410971bd862cb0120f9f826557b4917cf7da",
+                "reference": "f056410971bd862cb0120f9f826557b4917cf7da",
                 "shasum": ""
             },
             "require": {
@@ -250,9 +250,9 @@
             "description": "The Base Fomo Framework",
             "support": {
                 "issues": "https://github.com/fomo-framework/framework/issues",
-                "source": "https://github.com/fomo-framework/framework/tree/v2.1.0"
+                "source": "https://github.com/fomo-framework/framework/tree/v2.2.0"
             },
-            "time": "2022-11-05T08:36:59+00:00"
+            "time": "2022-11-07T18:07:53+00:00"
         },
         {
             "name": "graham-campbell/result-type",
