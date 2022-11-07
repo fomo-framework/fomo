@@ -17,7 +17,8 @@
     "autoload": {
         "psr-4": {
             "App\\" : "app/" ,
-            "Database\\" : "database/"
+            "Database\\" : "database/",
+            "Storage\\Routes\\" : "storage/routes/"
         }
     },
     "autoload-dev": {
