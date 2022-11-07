@@ -2,4 +2,6 @@
 
 /** @var Fomo\Router\Router $router */
 
-//$router->get('/' , ['class' , 'method']);
+$router->get('/' , function () {
+    return response()->plainText('hello world');
+});
