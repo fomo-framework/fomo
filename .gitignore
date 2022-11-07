@@ -7,3 +7,4 @@
 .phpunit.result.cache
 dump.rdb
 /storage/serverState.json
+/storage/routes
