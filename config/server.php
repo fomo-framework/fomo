@@ -48,7 +48,7 @@ return [
         'config',
         'database',
         'language',
-        'routes',
+        'router',
         'composer.lock',
         '.env',
     ] ,
