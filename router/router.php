@@ -1,7 +1,7 @@
 <?php
 
-/** @var Fomo\Router\Router $router */
+use Fomo\Facades\Route;
 
-$router->get('/' , function () {
+Route::get('/', function () {
     return response()->plainText('hello world');
 });
