@@ -31,16 +31,6 @@ return [
     ] ,
 
     /*
-     * The following services are created for better performance in the program, only one object is created from them and they can be used throughout the program
-     */
-    'services' => [
-        Fomo\Services\Database::class ,
-        Fomo\Services\Redis::class ,
-        Fomo\Services\Elasticsearch::class ,
-        Fomo\Services\Mail::class ,
-    ] ,
-
-    /*
      * Files and folders that must be changed in real time
      */
     'watcher' => [
