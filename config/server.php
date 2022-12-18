@@ -61,6 +61,6 @@ return [
          * For example, the:
          * $request->get('customers.*.name')
          */
-        'request' => DISABLE
+        'request' => false
     ]
 ];
