@@ -36,5 +36,10 @@
     "require-dev": {
         "fakerphp/faker": "^1.15",
         "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     }
 }
