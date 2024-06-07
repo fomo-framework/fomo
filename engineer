@@ -25,13 +25,13 @@ use Fomo\Commands\Scheduling\Start as SchedulerStartCommand;
 use Fomo\Commands\Scheduling\Status as SchedulerStatusCommand;
 use Fomo\Commands\Scheduling\Stop as SchedulerStopCommand;
 
-
 /*
- * create fomo application
+ * create const's and definitions
  */
-new \Fomo\Application\Application(
-    realpath('./')
-);
+define('PROJECT_PATH' , realpath('./'));
+const FOMO_VERSION = '2.3.0';
+const ENABLE = true;
+const DISABLE = false;
 
 /*
  * load .env file
@@ -41,7 +41,7 @@ Dotenv::createImmutable(basePath())->load();
 /*
  * set timezone
  */
-date_default_timezone_set(resolve('config')->get('app.timezone'));
+date_default_timezone_set(config('app.timezone'));
 
 /*
  * create console
