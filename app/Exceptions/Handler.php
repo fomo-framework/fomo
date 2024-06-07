@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Fomo\Request\Request;
 use Fomo\Response\Response;
+use Throwable;
 
 class Handler
 {
@@ -19,5 +20,12 @@ class Handler
         return response()->json([
             'message' => "this is route supported {$request->method()} method"
         ] , 405);
+    }
+
+    public function InternalErrorException(Request $request, Throwable $error): Response
+    {     
+        return response()->json([
+            'message' => 'internal error'
+        ] , 500);
     }
 }
