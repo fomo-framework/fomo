@@ -23,6 +23,11 @@ return [
          */
         'log_level' => SWOOLE_LOG_DEBUG ,
         'log_file' => storagePath('logs/fomo.log') ,
+    
+        /*
+        This key causes Fomo to receive a complete HTTP data packet and prevents it from receiving incomplete HTTP packets.
+        */
+        'open_http_protocol' => true,
     ],
 
     'ssl' => [
