@@ -32,3 +32,7 @@ We will be happy If you discover any security vulnerabilities or any other issue
 ## License
 
 The Fomo framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Benchmark
+
+You can visit this [link](https://web-frameworks-benchmark.netlify.app/result) to view the benchmarks of Fomo or other frameworks.
